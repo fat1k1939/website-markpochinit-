@@ -1,0 +1,18 @@
+
+.page{
+    center
+}
+.img{
+    max-width: 1000x;
+    weight: auto;
+}
+
+aside {
+    width: 46%;
+}
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    align-items: center;
+
+}
