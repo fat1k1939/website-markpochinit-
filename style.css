@@ -1,18 +1,30 @@
-
-.page{
-    center
+.text{
+    padding: 30px 40px;
+    width: 50%
+    color:--bs-warning-text-emphasis;
 }
+
 .img{
     max-width: 1000x;
     weight: auto;
 }
 
 aside {
+    padding: 15px 20px;
     width: 46%;
 }
 body {
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     display: flex;
     align-items: center;
-
 }
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
