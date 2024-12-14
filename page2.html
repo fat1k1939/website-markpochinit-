@@ -6,16 +6,109 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная</title>
-        <style>
-    body {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    display: flex;
-    align-items: center;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Стиль для верхней панели навигации */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center; /* Центрирует ссылки по горизонтали */
+            
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center; /* Центрирует текст в каждой ссылке */
+            display: block; /* Преобразует ссылку в блочный элемент */
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Стиль для контейнера с картинками */
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .description {
+            margin-top: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-item {
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .description {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-<a href="index.html">Вернуться на главную страницу</a>
+    <div class="navbar">
+        <a href="index.html" class="active">Главная</a>
+        <a href="page3.html">Наши услуги</a>
+        <a href="page4.html">Про нас</a>
+    </div>
 
+    <div class="image-container">
+        <div class="image-item">
+            <img src="https://img.lovepik.com/photo/20230421/medium/lovepik-young-male-technician-is-repairing-a-printer-at-office-photo-image_352234328.jpg" alt="Image 1">
+            <p class="description">мастер 1</p>
+        </div>
+        <div class="image-item">
+            <img src="https://thumbs.dreamstime.com/z/%D0%B7%D1%80%D0%B5%D0%BB%D1%8B%D0%B9-%D0%BC%D1%83%D0%B6%D1%87%D0%B8%D0%BD%D0%B0-%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%D0%B8%D1%80%D1%83%D0%B5%D1%82-%D0%BF%D0%BE%D0%BB%D0%BE%D0%BC%D0%BA%D1%83-%D0%B2-%D1%81%D0%B2%D0%BE%D0%B5%D0%BC-%D0%B4%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D0%B5-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B1%D0%B8%D0%BB%D1%8F-%D1%81-221628585.jpg" alt="Image 2">
+            <p class="description">мастер 2</p>
+        </div>
+        <div class="image-item">
+            <img src="https://img.freepik.com/premium-photo/caucasian-male-mechanic-repairs-car-garage-man-attentively-looking-car-car-maintenance-auto-service-garage-concept_2221-8136.jpg" alt="Image 3">
+            <p class="description">Мастер 3 Самый лучший мастер года</p>
+
+        </div>
+    </div>
+
+<a href="index.html">Вернуться на главную страницу</a>
 </body>
 </html>
