@@ -13,7 +13,7 @@ requestt = ("CREATE TABLE IF NOT EXISTS services "
 cursor.execute(request)
 
 inset_request = ("INSERT INTO PRODUCTS"
-                 "(name, description, minimal_price, max_price) VALUES (?, ?, ?)")
+                 "(name, description, minimal_price, max_price) VALUES (?, ?, ?, ?)")
 cursor.execute(insert_request, ("ремонт телевизора","описание","350", "800"))
 cursor.execute(insert_request, ("ремонт стиральной машины","описание","350", "1000"))
 cursor.execute(insert_request, ("ремонт компьютеров","описание","500", "1500"))
