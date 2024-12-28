@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mark Pochinit</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="{{url_for('static', filename='img/техника.png')}}" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .text{
+    padding: 30px 40px;
+    width: 50%
+    color:--bs-warning-text-emphasis;
+}
+
+.img{
+    max-width: 1000x;
+    weight: auto;
+}
+
+aside {
+    padding: 15px 20px;
+    width: 46%;
+}
+body {
+    background: 333;
+    display: flex;
+    align-items: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #292929;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #292929;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(2px);
+}
+
+    </style>
+</head>
+<body>
+
+<aside> <h2>Сайт по ремонту бытовой технике "Марк починит"</h2>
+</aside>
+<div class="button-container">
+        <a href="{{url_for('services')}}" class="button">Кнопка 1</a>
+        <a href="{{url_for('about')}}" class="button">Кнопка 2</a>
+        <a href="{{url_for('contact')}}" class="button">Кнопка 3</a>
+    </div>
+<div class="img">
+    <img src="техника.png" alt="">
+</div>
+
+
+</body>
+</html>
+
