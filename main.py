@@ -5,6 +5,7 @@ app = Flask(__name__)
 connection = sqlite3.connect("db.sqlite3")
 cursor = connection.cursor()
 
+
 @app.route ('/')
 def index():
     return render_template('index.html')
